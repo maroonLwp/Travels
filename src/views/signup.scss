@@ -1,0 +1,97 @@
+.Register {
+    width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url('../images/signinBack.jpg') 0 / cover fixed;
+    .RegisterInfor {
+        padding-top: 5em;
+        padding-bottom: 5em;
+        .signupHeader {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+        }
+        .signupTitle {
+            @extend .signupHeader;
+        }
+        .signupForm {
+            @extend .signupHeader;
+            min-height: 300px;
+            margin: 6em;
+            background: hsla(0, 0%, 100%, .3);
+            // border: 1px solid #ccc;
+            position: relative;
+            padding: 0 0 1px 0;
+            background: hsla(0, 0%, 100%, .3);
+            background: -webkit-gradient(linear, 0% 20%, 0% 92%, from(#f3f3f3), to(hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3)), color-stop(.1, #f3f3f3));
+            background: -webkit-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3));
+            background: -o-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3));
+            background: -moz-linear-gradient(0 0 270deg, #f3f3f3, #f3f3f3 10%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3));
+            // border-top: 1px solid white;
+            // border-right: 1px solid #ccc;
+            border-radius: 0 0 60px 0;
+            box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
+            &::before {
+                content: '';
+                width: 25px;
+                height: 20px;
+                background: hsla(0, 0%, 100%, .3);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3);
+                background: -webkit-gradient(linear, 0% 20%, 50% 40%, from(hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3)), to( #eee), color-stop(.1, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3)));
+                background: -webkit-linear-gradient(0 50%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3) 10%, #eee);
+                background: -o-linear-gradient(0 50%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3) 10%, #eee);
+                background: -moz-linear-gradient(0 50%, hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, .3) hsla(0, 0%, 100%, .3) 10%, #eee);
+                border-radius: 0 0 30px 0;
+                box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+                -webkit-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+                -moz-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+                -o-transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+                transform: rotate(-20deg) skew(-40deg, -3deg) translate(-13px, -13px);
+            }
+            &::after {
+                content: '';
+                z-index: -1;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.2);
+                display: inline-block;
+                box-shadow: 20px 20px 17px rgba(0, 0, 0, 0.2);
+                -webkit-transform: rotate(0deg) translate(-45px, -20px) skew(20deg);
+                -moz-transform: rotate(0deg) translate(-40px, -17px) skew(20deg);
+                -o-transform: rotate(0deg) translate(-40px, -17px) skew(20deg);
+                transform: rotate(0deg) translate(-40px, -17px) skew(20deg);
+            }
+            .signupConetent {
+                margin-top: 4em;
+                outline: none;
+                text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+            }
+            .ribbon {
+                position: absolute;
+                top: -25px;
+                width: 14em;
+                height: 4em;
+                text-align: center;
+                line-height: 4em;
+                font-family: "Roboto";
+                font-size: 1em;
+                background: rgba(245, 245, 245, 0.12);
+                // background: -webkit-gradient(linear, 555% 20%, 0% 92%, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.0)), color-stop(.1, rgba(0, 0, 0, 0.2)));
+                // background: -webkit-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.0));
+                // background: -o-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.0));
+                // background: -moz-linear-gradient(555% 0 180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.0));
+                border-left: 1px dashed rgba(0, 0, 0, 0.1);
+                border-right: 1px dashed rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.brandImage {
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+    margin-left: 100%
+}
+
+.navSignin {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    }
+}
+
+.navSignup {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: black;
+    }
+}
+
+.navItem {
+    font-size: 1.5em;
+    height: 64px;
+    position: absolute;
+    left: 4%;
+    a {
+        color: white;
+        font-weight: normal;
+        margin-left: 1em;
+        text-decoration: none;
+        height: 64px;
+        line-height: 64px;
+        &:hover {
+            color: black;
+        }
+    }
+}
